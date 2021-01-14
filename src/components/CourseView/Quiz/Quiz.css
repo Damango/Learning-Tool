@@ -1,0 +1,159 @@
+.quiz-container{
+    position: relative;
+
+    width: 1105px;
+}
+
+
+
+.quiz-title{
+    margin-top:75px;
+    margin-left: 100px;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.quiz-question{
+    margin-left: 100px;
+    margin-top: 100px;
+    font-family: Roboto;
+ 
+    font-size: 24px;
+}
+
+.answers-wrapper{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.answer-container{
+    position: relative;
+    height: 50px;
+    border: 2px solid #0084FE;
+    background-color: #0084FE;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 1000px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+
+.answer-container:hover{
+
+  
+background-color: white;
+    cursor: pointer;
+}
+
+.answer-container:hover .quiz-text{
+    color: #0084FE;
+}
+
+.answer-container:hover .quiz-letter{
+    color: #0084FE;
+}
+
+
+.quiz-letter{
+    display: inline-block;
+}
+
+.quiz-circle{
+    position: relative;
+    top: 50%;
+    margin-left: 20px;
+    transform: translateY(-50%);
+    margin-right: 15px;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid #0084FE;
+    display: inline-block;
+}
+.quiz-letter{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.quiz-text{
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 100px;
+    font-size: 18px;
+    font-family: Roboto;
+    display: inline-block;
+    color: white;
+    transition: 0.3s;
+}
+
+.check-answer-button{
+    background-color: #0051ff;
+    letter-spacing: 1px;
+    color: white;
+    display: inline-block;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 100px;
+    padding: 20px 35px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.check-answer-button:hover{
+    background-color: #0035a8;
+    cursor: pointer;
+}
+
+.next-question-button{
+    position:absolute;
+    background-color: blue;
+
+    font-family: Roboto;
+    color: white;
+    display: inline-block;
+    right: 0px;
+    font-size: 20px;
+   
+    padding: 20px 35px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.next-question-button:hover{
+    background-color: teal;
+    cursor: pointer;
+}
+
+.previous-question-button{
+    position:absolute;
+    background-color: blue;
+
+    font-family: Roboto;
+    color: white;
+    display: inline-block;
+    right: 200px;
+    font-size: 20px;
+   
+    padding: 20px 35px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.previous-question-button:hover{
+    background-color: teal;
+    cursor: pointer;
+}
