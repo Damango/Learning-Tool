@@ -12,6 +12,19 @@
                     ]
                 }
             ]
+        },
+        {
+            "header": "2.0 Linked Lists",
+            "headerText": "This is just filler so that I can really see what I am working with as far as getting multiple lines of code inside where they need to be.",
+            "position": 1,
+            "subSections": [
+                {
+                    "title": "2.1 Introduction to Linked Lists",
+                    "texts": [
+                        "Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers."
+                    ]
+                }
+            ]
         }
     ]
 }

@@ -22,10 +22,10 @@ const CourseView = (props) => {
 
     function changeView(data) {
         setCourseState(data)
-        setTestNumber(69)
+        setTestNumber(1)
         setTimeout(function () {
             setTestNumber(0)
-        }, 100)
+        }, 1)
 
 
     }
@@ -35,7 +35,7 @@ const CourseView = (props) => {
             return <Quiz data={theCourseData[courseState]} />
         }
 
-        if (testNumber === 69) {
+        if (testNumber === 1) {
             return (<div></div>)
         }
 
