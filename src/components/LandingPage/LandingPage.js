@@ -48,21 +48,22 @@ const LandingPage = () => {
             sectionCount: algorithmData.algorithmsSecitons.length
         },
         {
-            courseName: "Machine Learning & Data Science",
-            image: courseImgHandler[1],
-            data: machineLearningData.machineLearningSections,
-            ID: 1,
-            sectionCount: machineLearningData.machineLearningSections.length
-        },
-        {
             courseName: "Front-End Development & Design",
-            image: courseImgHandler[2],
-            ID: 2,
+            image: courseImgHandler[1],
+            ID: 1,
             sectionCount: 14
         },
         {
-            courseName: "Data Structures & Algorithms",
-            image: courseImgHandler[0],
+            courseName: "Machine Learning & Data Science",
+            image: courseImgHandler[2],
+            data: machineLearningData.machineLearningSections,
+            ID: 2,
+            sectionCount: machineLearningData.machineLearningSections.length
+        },
+
+        {
+            courseName: "React Development",
+            image: courseImgHandler[3],
             ID: 3,
             sectionCount: 22
         },
