@@ -12,11 +12,18 @@ const CourseView = (props) => {
 
     const [testNumber, setTestNumber] = useState(0)
 
+    let newWidth = Math.floor(window.innerWidth * 0.16)
+
+    let navBarWidth = {
+        width: newWidth
+    }
+
+
 
 
 
     const viewStyle = useSpring({ opacity: 1, from: { opacity: 0 } })
-    const barView = useSpring({ from: { marginLeft: -300 }, to: { marginLeft: 0 } })
+    const barView = useSpring({ from: { width: 0 }, to: { width: 300 } })
     const textStyle = useSpring({ from: { opacity: 0 }, to: { opacity: 1 }, config: { duration: 500 }, delay: 200 })
 
 
@@ -58,16 +65,18 @@ const CourseView = (props) => {
 
     return (<div className="course-view-container">
         <animated.div style={barView} className="course-nav-bar">
-            <div className="course-nav-bar-header">
-                <animated.div style={viewStyle} className="header-text">{props.data.courseName}</animated.div>
-                <div className="progress-bar">
-                    <div className="progress-bar-fill"></div>
+            <div style={navBarWidth} className="course-nav-bar-wrapper" >
+                <div className="course-nav-bar-header">
+                    <animated.div style={viewStyle} className="header-text">{props.data.courseName}</animated.div>
+                    <div className="progress-bar">
+                        <div className="progress-bar-fill"></div>
+                    </div>
                 </div>
-            </div>
-            <div className="course-bar-sections-container">
-                {theCourseData.map((section) =>
-                    <CourseSection header={section.header} id={section.position} changeView={changeView} end={theCourseData.length} />
-                )}
+                <div className="course-bar-sections-container">
+                    {theCourseData.map((section) =>
+                        <CourseSection header={section.header} id={section.position} changeView={changeView} end={theCourseData.length} />
+                    )}
+                </div>
             </div>
         </animated.div>
         {quiz_material_view()}

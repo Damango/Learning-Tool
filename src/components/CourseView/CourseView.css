@@ -12,6 +12,7 @@
 
 .course-nav-bar{
     position: fixed;
+    overflow: hidden;
     float: left;
     width: 16%;
     height: 100vh;
@@ -21,7 +22,14 @@
 
 .course-nav-bar-header{
     position: relative;
-    height: 20%;
+    height: 200px;
+}
+
+
+
+.course-nav-bar-header{
+    position: relative;
+    height: 175px;
     background: linear-gradient(to right,#0085FF, #046ed1);
     color: white;
     font-family: Roboto;
